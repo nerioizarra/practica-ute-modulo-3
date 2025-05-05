@@ -1,11 +1,16 @@
 import React from 'react';
-import { Card } from 'antd';
+import TodoList from '../components/TodoList';
 
 const Page1 = () => {
   return (
-    <Card title="Página 1" style={{ width: 300, margin: 'auto', marginTop: 50, textAlign: 'center' }}>
-      <p>Contenido de la Página 1</p>
-    </Card>
+    <div style={{
+      minHeight: '100vh',
+      padding: '24px',
+      backgroundImage: 'linear-gradient(90deg, #020024 0%,rgb(9, 61, 121) 35%, #00d4ff 100%)',
+
+    }}>
+      <TodoList />
+    </div>
   );
 };
 
